@@ -4,9 +4,7 @@ import tkinter as tk
 from tkinter import filedialog
 
 
-#root = tk.Tk()
 path = filedialog.askdirectory(initialdir=os.getcwd(), title="Select a dir", )
-print(path)
 
 
 #create a resource for s3
