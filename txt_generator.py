@@ -1,5 +1,4 @@
 import random
-import nltk
 from nltk.corpus import words
 
 def content(fileType):
