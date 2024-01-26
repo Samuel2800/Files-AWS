@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	file, err := os.Open("files/Typea.txt")
+	file, err := os.Open("files/test3.txt")
 	if err != nil {
 		fmt.Println("Error opening file:", err)
 		return
