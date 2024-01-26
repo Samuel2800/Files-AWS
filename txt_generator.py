@@ -20,7 +20,7 @@ def content_generator(fileType):
 
 
 def arit_expression():
-    operators = ['+', '-', '*', '/']
+    operators = [' + ', ' - ', ' * ', ' / ']
     expression = []
     length = random.randint(3, 9)
     expression.append(str(random.randint(1,10)))
@@ -58,10 +58,7 @@ def main():
     type_input = ""
     while type_input not in types:
         type_input = input("Enter the type of file you want to generate:").lower().strip()
-    try:
-        for i in range(int(number_files)):
-            file_generator(type_input)
-    except:
-        print("Error: something went wrong, try again")
+    for i in range(int(number_files)):
+        file_generator(type_input)
 
 main()
